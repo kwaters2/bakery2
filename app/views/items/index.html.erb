@@ -28,11 +28,12 @@
         <%= link_to (image_tag item.image, :class=>"img-responsive"), item %>
      <p><%= item.description %></p>
     
-    
-     
+    <p>
+     <a href="/cart/<%= item.id %>" class="button">add to Cart</a>
         <%= link_to 'Show', item, :class=>"btn btn-primary" %>
         <%= link_to 'Edit', edit_item_path(item) %>
         <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+ </p>
  </div>
 <% end %>
 </div>
