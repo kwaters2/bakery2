@@ -1,41 +1,44 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Items</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Price</th>
-      <th>Category</th>
-      <th>Caloriesperserving</th>
-      <th>Glutenfree</th>
-      <th>Containsnuts</th>
-      <th>Description</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<h1>See full range of our delicious Cakes!</h1>
 
-  <tbody>
+
+
+
+<div class="row">
     <% @items.each do |item| %>
-      <tr>
-        <td><%= item.name %></td>
-        <td><%= item.price %></td>
-        <td><%= item.category %></td>
-        <td><%= item.caloriesPerServing %></td>
-        <td><%= item.glutenFree %></td>
-        <td><%= item.containsNuts %></td>
-        <td><%= item.description %></td>
-        <td><%= item.image %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+    
+    
+    
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+    
+    <h2><%= item.name %></h2>
+        <h4>Price: <%= item.price %></h4>
+        <p>Calories per Serving: <%= item.caloriesPerServing %></p>
+        <p>Gluten Free: 
+        <%  if item.glutenFree? %>Yes
+        <% else %>No 
+        <% end %></p>
+        <p>Item contains Nuts: 
+        <% if item.containsNuts? %>Yes
+        <% else %>No 
+        <% end %>
+        </p>
+        <%= link_to (image_tag item.image, :class=>"img-responsive"), item %>
+     <p><%= item.description %></p>
+    
+    
+     
+        <%= link_to 'Show', item, :class=>"btn btn-primary" %>
+        <%= link_to 'Edit', edit_item_path(item) %>
+        <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+ </div>
+<% end %>
+</div>
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>
+<%= link_to 'New Item', new_item_path, :class=>"btn btn-primary" %>
+
+
