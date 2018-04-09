@@ -4,7 +4,7 @@ class UserController < ApplicationController
     session[:login] = 1 
     flash[:notice] = "Welcome!"
     redirect_to :controller => :items 
-    end
+  end
 
 
   def logout

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :categories
 get '/checkout', to: 'cart#index' 
    
   get 'cart/index'
@@ -24,6 +25,8 @@ get '/checkout', to: 'cart#index'
   get '/cart/:id', to: 'cart#add'
   get '/cart/remove/:id', to: 'cart#remove'
   root :to => 'site#home'
+  
+  get 'category/:title', to: 'static_pages#category'
 
 end
 
