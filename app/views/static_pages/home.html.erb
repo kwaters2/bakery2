@@ -1,0 +1,61 @@
+<% provide(:title, 'Home')%>
+<div class="home">
+    <div id="banner">
+        <div class="container"><!-- need to have content inside container as not to have at edge -->
+            <h1>The perfect cake every time!</h1><!-- using background image instead -->
+            <!-- <%= image_tag("cupcake.jpg", alt: "Bakery", style:"width:80%;" ) %> -->
+        </div>
+    </div>
+    <section class="row">
+	  <div class="inner">
+        <div class="container"> <!-- taken from the application.html.erb page -->
+            <div class="col-xs-25 col-sm-12 col-md-6 col-lg-10">
+                <div class="itemhols">
+                    <%= render 'layouts/categories' %>
+                </div>
+            </div>
+         </div>
+      </div>
+   <section class="row categories catRow1">
+	  <div class="inner">
+	     <div class="container">
+    	   <div class="col-md-4 baby">
+    	       <h2>Baby</h2>
+    	   </div>
+    	   <div class="col-md-4 birthday">
+    	       <h2>Birthday</h2>
+    	   </div>
+    	   <div class="col-md-4 wedding">
+    	       <h2>Wedding</h2>
+    	   </div>
+	    </div>
+	  </div>
+	</section>
+    <section class="row categories catRow2">
+	   <div class="inner">
+    	  <div class="container">
+        	   <div class="col-md-3 communion">
+        	       <h2>Communion</h2>
+        	   </div>
+        	   <div class="col-md-3 chocolate">
+        	       <h2>Chocolate</h2>
+        	   </div>
+        	   <div class="col-md-3 small">
+        	       <h2>Small</h2>
+        	   </div>
+        	   <div class="col-md-3 gluten">
+        	       <h2>Gluten-free</h2>
+        	   </div>
+	      </div>
+	  </div>
+	</section>
+	<section class="row" id="info">
+	   <div class="inner">
+    	  <div class="container">
+        	   <div class="col-md-12">
+        	   
+        	   </div>
+	      </div>
+	   </div>
+	</section>
+</div>

@@ -1,0 +1,172 @@
+@import "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css";
+@import "bootstrap";
+
+.header {
+    min-height: 10px;
+    background-color: #555;
+    background:black;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    margin-bottom:10px;
+    overflow:auto;
+}
+.header h2 {
+    color: #ffffff;
+    font-size: 40px;
+    width:40%;
+    float:left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /*down from top*/
+    overflow: hidden;
+    float: right;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    font-size:13px;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color:rgb(255,255,255);
+    background-color: #111;
+    text-decoration:none;
+}
+
+/* modifications */
+.row { 
+    margin:0; /* fix needed for bootstrap */
+}
+
+.headTop {
+    min-height: 10px;
+}
+.headTop ul { 
+    width:40%;
+    min-height:10px;
+    float: right;
+}
+.headTop li {
+    float: right;
+}
+.headTop li span { 
+    color: rgba(255,255,255,0.8);
+    width: 100px;
+    float:left;
+    display:block;
+}
+.headBot {
+    background-color:rgb(200,40,200);
+    min-height: 120px;
+}
+.headBot ul {
+     padding-top: 40px;   
+}
+.wrapper { 
+    width: 100%;
+}
+.header { 
+    margin-bottom:0;
+}
+
+/* home page */
+#banner {
+    background:url('/assets/cupcake.jpg');
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+}
+
+/* home categories*/
+.catRow1A {
+    min-height:400px;
+}
+.catRow1B {
+    min-height:400px;
+}
+
+.catRow2 {
+    min-height:300px;
+}
+.categories {
+    padding: 0px 0 0px;
+}
+.catRow2 .container { 
+    padding-bottom: 60px;
+}
+.col-md-2 {
+    height: 400px;
+}
+.col-md-4 {
+    height: 200px;
+}
+
+
+.baby {
+   background: red; 
+   background: url('/assets/category/baby.jpg');
+  
+   
+}
+.birthday {
+   background:black;
+   background: url('/assets/category/birthday.jpg');
+}
+.wedding {
+   background:purple; 
+   background: url('/assets/category/wedding.jpg');
+}
+.communion {
+   background:pink;
+   background: url('/assets/category/communion.jpg');
+}
+.chocolate {
+    background:brown;
+    background: url('/assets/category/chocolate.jpg');
+}
+.small {
+   background:lime;
+   background: url('/assets/category/small.jpg');
+}
+.gluten {
+   background:navy;
+   background: url('/assets/category/gluten.jpg');
+}
+
+.categories .col-md-6, .categories .col-md-4 {
+   background-size: 100%;
+   min-height: 400px;
+   overflow:auto; 
+}
+
+
+/* info band */
+#info {
+    background: rgb(230,230,230);
+    min-height: 200px;
+    padding: 40px 0;
+}
+
+
+/* footer */
+.foot {
+    min-height: 200px;
+    background: rgb(255,255,255);
+    padding: 40px 0;
+}

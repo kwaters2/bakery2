@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=yield(:title) %> | Bakery</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    	<!--	Bootstrap	-->						
+    <link	rel="stylesheet"	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" >	
+  </head>
+  <body>
+    <%= render 'layouts/header'%> 
+    <div class="wrapper"><!-- replace container with wrapper here -->
+    <!-- <div class="container">   transferred to individual pages - must include div cotainer in eash page -->
+        <%= yield %> 
+    </div>
+    
+    
+    <%= render 'layouts/footer'%> 
+  	<!--	jQuery	(necessary	for	Bootstrap's	JavaScript	plugins)	-->				
+  	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"> </script>				
+  	<!--	Include	all	compiled	plugins	(below),	or	include	individual	files	as	needed	-->	
+  	<script	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"> </script>
+  </body>
+</html>
+
