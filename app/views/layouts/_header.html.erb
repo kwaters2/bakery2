@@ -8,9 +8,16 @@
         <li><%= link_to "Contact", contact_path %></li>
         <li><%= link_to "About", about_path %></li>
         <li><%= link_to "Items", items_path %></li>
-        <li><%= link_to "Login", login_path %></li>
-        <li><%= link_to "Logout", logout_path %></li>
-        <li><%= link_to "Cart", cart_path  %></li>
+         <li><%= link_to "Cart", cart_path  %></li>
+       
+       
+       <% if session {:login} == 1 %>
+         <li><%= link_to "Logout", logout_path %></li>
+        <% else %>
+        
+          <li><%= link_to "Login", login_path %></li>
+        <% end %>
+        
     </ul>
 
 </header>
