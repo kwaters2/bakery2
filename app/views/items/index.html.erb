@@ -14,7 +14,7 @@
  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
     
     <h2><%= item.name %></h2>
-        <h4>Price: <%= item.price %></h4>
+        <h4>Price: € <%= item.price %></h4>
         <p>Calories per Serving: <%= item.caloriesPerServing %></p>
         <p>Gluten Free: 
         <%  if item.glutenFree? %>Yes
@@ -30,16 +30,22 @@
     
     <p>
      <a href="/cart/<%= item.id %>" class="button">add to Cart</a>
-        <%= link_to 'Show', item, :class=>"btn btn-primary" %>
-        <%= link_to 'Edit', edit_item_path(item) %>
-        <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
- </p>
+    <%= link_to 'Show', item, :class=>"btn btn-primary" %>
+    
+       
+    <% if session[:login] == 1 %>
+    
+
+    <%= link_to 'Edit', edit_item_path(item) %>
+    <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>  
+    </p>
  </div>
 <% end %>
 </div>
 
 <br>
 
-<%= link_to 'New Item', new_item_path, :class=>"btn btn-primary" %>
+<%= link_to 'New Item', new_item_path, :class=>"button", :role=>"button" %>
 
 

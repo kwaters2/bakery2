@@ -3,7 +3,7 @@
 <div id="cartContainer">
 
 <% if @cart.empty? %>
-<p>you need to have some products added to buy something</p>
+<p>Please add Yummy Cakes to your cart</p>
 <% end %>
 
     <table id="customers">
@@ -40,12 +40,13 @@
             Grand Total: <%= number_to_currency(total, :unit => "€") %>
             
         </tr>
+       
         
         <td>
         <a href="/cart/clear" class="button">Empty Cart </a>
         
         </td>
-        
+       
         
     </table>
     
@@ -53,6 +54,6 @@
     <p><a href="/items" class="button">Continue Shopping</a></p>
     <a href="/checkout" class="button">Checkout</a>
     
-   iption
+   
     
     </div>
