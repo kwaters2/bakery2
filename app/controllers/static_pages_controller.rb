@@ -10,10 +10,10 @@ class StaticPagesController < ApplicationController
   end
 
 
-def category
+  def category
     catName = params[:title]
       
     @items = Item.where("category like ?", catName)
    
-end
+  end
 end
