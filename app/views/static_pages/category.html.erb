@@ -1,0 +1,24 @@
+<div class="itemsContainer">
+    
+    
+    <h1>Please look at our selection of cakes</h1>
+    
+    <% if @items.length ==0 %>
+    <h2>Would you like to add some more products?</h2>
+    <% end %>
+    
+    
+    <% @items.each do |item| %>
+    <div class="itemhols">
+        <h1><%= item.name %></h1>
+        <%= image_tag item.image, :class=>"itemholsIm" %>
+        <p>This item is in the category: <%= item.category %></p>
+        
+        
+    </div>
+    
+    <% end %>
+    
+    
+    
+</div>

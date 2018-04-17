@@ -4,29 +4,14 @@
 <h1>Categories</h1>
 
 
-
-
-    <% @categories.each do |category| %>
-     <div class="col-xs-25 col-sm-12 col-md-6 col-lg-10 text-center">
-    
-     
-        <div class="itemhols">
+<% @categories.each do |category| %>
+  <div class="col-xs-25 col-sm-12 col-md-6 col-lg-10 text-center">
       
-      
-        <h3><%= category.title %></h3>
-        <p><%= category.descriprion %></p>
-        <%= link_to (image_tag category.image, :class=>"img-circle float-left", :style=>"width:200px;height:200px;"), category %> 
+    <h3><%= category.title %></h3>
+    <p><%= category.descriprion %></p>
+     <%= image_tag category.image, :class=>"img-circle float-left", :style=>"width:200px;height:200px;" %>
          
-        
-       
-        
-                
-        
-        
-        
-        
-        
-        
+ 
         
         
         <%= link_to 'Show', category %>
