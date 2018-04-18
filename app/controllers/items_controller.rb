@@ -6,6 +6,19 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
   end
+  
+  
+  def search
+  @search_term = params[:q]
+  st = "%#{params[:q]}%"
+  @items = Item.where("description like ?", st)
+    
+    
+  end
+  
+  
+  
+  
 
   # GET /items/1
   # GET /items/1.json

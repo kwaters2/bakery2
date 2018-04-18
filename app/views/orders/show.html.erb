@@ -1,19 +1,45 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Order date:</strong>
-  <%= @order.order_date %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @order.user %>
-</p>
+<div id="itemsContainer">    
+<h1>Order Details</h1>    
+<table id="customers">    
+<tr>      
+<td>Order Date:</td>      
+<td>Ordered By:</td>      
+<td>Order Status:</td>                
+</tr>            
+<tr>      
+<td><%= @order.order_date %></td>      
+<td><%= @order.user %></td>      
+<td><%= @order.status %></td>          
+</tr>        
 
-<p>
-  <strong>Status:</strong>
-  <%= @order.status %>
-</p>
+<tr>
+  <td><%= link_to 'Edit Order', edit_order_path(@order), :class =>"button" %></td> 
+   <td><%= link_to 'Back to Orders', orders_path, :class =>"button" %> 
+    
+    
+  </td>
+  
+  
+  
+</tr>
 
-<%= link_to 'Edit', edit_order_path(@order) %> |
-<%= link_to 'Back', orders_path %>
+
+</table>    
+
+
+<h2>Order Details</h2>
+
+<table id="customers">
+  <%= @orderitems.each do |orderitem| %>
+  <tr>
+    <td><%= orderitem.title %></td>
+    <td>QTY ordered: <%= orderitem.quantity %></td>
+   
+ 
+  </tr>
+  
+     <% end %>
+</table>
+</div>
