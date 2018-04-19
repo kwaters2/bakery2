@@ -28,17 +28,19 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @categories = Category.all.map{|c| [ c.title, c.id ] }
   end
 
   # GET /items/1/edit
   def edit
+    @categories = Category.all.map{|c| [ c.title, c.id ] } 
   end
 
   # POST /items
   # POST /items.json
   def create
     @item = Item.new(item_params)
-
+    @item.category_id = params[:category_id] 
     respond_to do |format|
       if @item.save
         format.html { redirect_to @item, notice: 'Item was successfully created.' }
@@ -53,6 +55,8 @@ class ItemsController < ApplicationController
   # PATCH/PUT /items/1
   # PATCH/PUT /items/1.json
   def update
+    @item.category_id = params[:category_id]
+    @categories = Category.all.map{|c| [ c.title, c.id ] }
     respond_to do |format|
       if @item.update(item_params)
         format.html { redirect_to @item, notice: 'Item was successfully updated.' }
