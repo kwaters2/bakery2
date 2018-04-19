@@ -11,14 +11,11 @@ class ItemsController < ApplicationController
   def search
   @search_term = params[:q]
   st = "%#{params[:q]}%"
-  @items = Item.where("description like ?", st)
-    
-    
+  @items = Item.where("descriprion like ?", st)
   end
   
-  
-  
-  
+
+
 
   # GET /items/1
   # GET /items/1.json
@@ -28,16 +25,20 @@ class ItemsController < ApplicationController
   # GET /items/new
   def new
     @item = Item.new
+    @categories = Category.all.map{|c| [ c.title, c.id ] }
   end
 
   # GET /items/1/edit
   def edit
+     @categories = Category.all.map{|c| [ c.title, c.id ] }
   end
 
   # POST /items
   # POST /items.json
   def create
     @item = Item.new(item_params)
+     @item = Item.new(item_params)
+    @item.category_id = params[:category_id]
 
     respond_to do |format|
       if @item.save
@@ -53,6 +54,8 @@ class ItemsController < ApplicationController
   # PATCH/PUT /items/1
   # PATCH/PUT /items/1.json
   def update
+    @item.category_id = params[:category_id]
+    @categories = Category.all.map{|c| [ c.title, c.id ] }
     respond_to do |format|
       if @item.update(item_params)
         format.html { redirect_to @item, notice: 'Item was successfully updated.' }

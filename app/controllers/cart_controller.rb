@@ -76,8 +76,7 @@ def createOrder
      @orderitems = Orderitem.where(order_id: Order.last)
      
      # session[:cart] = nil #Hashed out for class demo
-  end
-    
+end
   
   
   
