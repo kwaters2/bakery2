@@ -83,7 +83,8 @@ li a:hover {
 .headTop {
     min-height: 10px;
     width: 100%;
-    background: black;
+    background-color: #422D1E;
+    background-color: rgb(66,45,30);
 }
 
 .headTop ul { 
@@ -170,7 +171,7 @@ li a:hover {
 .search-label { 
     display: block; 
     max-width: 200px;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 .search-label label { 
     margin-bottom: 0;
@@ -252,7 +253,7 @@ li a:hover {
 }
 .categories .content h3, .itemsPage .content h3 { 
     font-size: 18px;
-    min-height: 40px;
+    min-height: 60px;
 }
 .categories .content p, .itemsPage .content p { 
     color: #222277; /*edit*/
@@ -261,7 +262,13 @@ li a:hover {
 
 /*mods*/
 .itemsPage .content p {
-    min-height: 340px;
+    min-height: 270px;
+}
+.itemsPage  .content .cake:nth-of-type(-n + 4) p {
+    min-height: 360px;
+}
+.itemsPage  .content .cake:nth-of-type(5 + 6 + 7 + 8) p {
+    min-height: 280px;
 }
 
 
@@ -269,12 +276,13 @@ li a:hover {
 .imgHols {
     min-height: 300px;
     display: block;
+   
 }
 .cake:nth-of-type(-n+4) .imgHols { /*1st 4 items*/
-    min-height: 140px;
+    min-height: 160px;
 }
 .cake:nth-of-type(4n + 1) {
-    clear: both;
+    clear: both;                                
     background-color: #ddd;
 }
 .cake:nth-of-type(4n + 3) {
