@@ -1,0 +1,255 @@
+@import "//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css";
+@import "bootstrap";
+.header {
+    min-height: 10px;
+    background-color: #555;
+    background:grey;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    margin-bottom:10px;
+    overflow:auto;
+   
+}
+
+.header h1 {
+    
+    color: #ffffff;
+    font-size: 80px;
+    padding:15px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color:rgb(255,255,255);
+    background-color: #111;
+    text-decoration:none;
+}
+
+/* modifications */
+.row { 
+    margin:0; /* fix needed for bootstrap */
+}
+
+/******* can delete all below including this line ********/
+
+.headTop {
+    min-height: 10px;
+}
+.headTop ul { 
+    width:40%;
+    min-height:10px;
+    float: right;
+}
+.headTop li {
+    float: right;
+}
+.headTop li span { 
+    color: rgba(255,255,255,0.8);
+    width: 100px;
+    float:left;
+    display:block;
+}
+.headBot {
+    background-color:rgb(200,40,200);
+    min-height: 120px;
+}
+.headBot ul {
+     padding-top: 40px;   
+}
+.wrapper { 
+    width: 100%;
+}
+.header { 
+    margin-bottom:0;
+}
+
+h1 {
+   font-family: "Times New Roman", Times, serif;
+    
+
+}
+
+
+
+/* home categories*/
+.categories {
+    padding: 20px 0 10px;
+}
+.catRow2 .container { 
+    padding-bottom: 60px;
+}
+.col-md-4 {
+    height: 200px;
+}
+.col-md-3 {
+    height: 160px;
+}
+.baby {
+   background: red; 
+}
+.birthday {
+   background:black;
+}
+.wedding {
+   background:purple; 
+}
+.communion {
+   background:pink;
+}
+.chocolate {
+    background:brown;
+}
+.small {
+   background:lime;
+}
+.gluten {
+   background:navy;
+}
+
+/* info band */
+#info {
+    background: rgb(230,230,230);
+    min-height: 200px;
+    padding: 40px 0;
+}
+
+
+/***************** delete to here only *********/
+
+
+
+/* footer */
+.foot {
+    min-height: 200px;
+    background: rgb(255,255,255);
+    padding: 40px 0;
+}
+
+
+
+/* items*/
+
+.item-each { 
+    min-height: 880px;
+}
+.item-each:nth-of-type(4n+1){
+    clear: left;
+}
+
+
+.search-label { 
+    display: block; 
+    max-width: 200px;
+    padding-top: 10px;
+    
+}
+
+/* modifications */
+.row { 
+    margin:0; /* fix needed for bootstrap */
+}
+
+.headTop {
+    min-height: 10px;
+    width: 100%;
+    background: black;
+}
+
+.headTop ul { 
+    width:40%;
+    min-height: 0;
+    float: right;
+    color: white;
+}
+.headTop li {
+    float: right;
+}
+.headTop li span { 
+    color: rgba(255,255,255,0.8);
+    width: 100px;
+    float:left;
+    display:block;
+}
+.headTop table { 
+    float: right; 
+    width: 40%; 
+    min-width: 400px;
+    margin-bottom: 5px;
+    color: rgba(255,255,255,0.8);
+}
+.headTop table a { 
+    color: rgb(200,220,220);
+}
+.headTop table a:link { 
+    color: white;
+}
+
+.headTop .phone {
+    padding-right: 80px;
+}
+.headTop .search {
+    text-align: right;
+    padding-right: 0;
+}
+.headBot {
+    background-color:rgb(200,40,200);
+    min-height: 120px;
+}
+.headBot h2 {
+    color: white;
+}
+.headBot ul {
+     padding-top: 20px;  
+     background-color: rgba(0,0,0,0.2);
+     width: 100%;
+}
+.headBot span {
+    display: block;
+    float: right;
+    max-width: 50%;
+}
+.wrapper { 
+    width: 100%;
+}
+.header { 
+    margin-bottom:0;
+}
+
+
+/* home page */
+#banner {
+    background:url('/assets/cover.jpg');
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+}
+
+

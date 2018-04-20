@@ -1,0 +1,476 @@
+
+---
+ar_internal_metadata:
+  columns:
+  - key
+  - value
+  - created_at
+  - updated_at
+  records: 
+  - - environment
+    - development
+    - '2018-04-08 09:58:37.107952'
+    - '2018-04-08 09:58:37.107952'
+
+---
+categories:
+  columns:
+  - id
+  - title
+  - descriprion
+  - image
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Birthday & Occasion
+    - Please click to view our selection of Birthdays and Occasion Cakes
+    - birthday_1.jpg
+    - '2018-04-09 21:47:54.343837'
+    - '2018-04-09 22:07:39.988818'
+  - - 2
+    - Wedding Cakes
+    - Handmade Wedding Cakes – All cakes are tailor made to you and your wedding theme…
+    - category/wedding.jpg
+    - '2018-04-09 21:54:34.660017'
+    - '2018-04-09 21:54:34.660017'
+  - - 3
+    - Communion and Confirmation Cakes
+    - Specialised cakes for your child's Communion or Confirmation party
+    - category/communion.jpg
+    - '2018-04-09 21:55:08.468822'
+    - '2018-04-09 21:55:08.468822'
+  - - 4
+    - Gluten Free
+    - Handcrafted & delicious gluten free cakes
+    - category/gluten.jpg
+    - '2018-04-09 21:55:37.110435'
+    - '2018-04-09 21:55:37.110435'
+  - - 5
+    - Just for Baby
+    - Whether baby shower, christening or birthday celebration you can choose from
+      a variety of cakes
+    - category/baby.jpg
+    - '2018-04-09 21:56:10.461184'
+    - '2018-04-09 21:56:10.461184'
+  - - 6
+    - Small Cakes
+    - Gourmet cupcakes and pastries
+    - category/small.jpg
+    - '2018-04-09 21:56:51.466838'
+    - '2018-04-09 21:56:51.466838'
+  - - 7
+    - newcategory
+    - 
+    - baby.jpg
+    - '2018-04-19 10:18:10.463537'
+    - '2018-04-19 10:18:10.463537'
+
+---
+items:
+  columns:
+  - id
+  - name
+  - price
+  - category
+  - caloriesPerServing
+  - glutenFree
+  - containsNuts
+  - description
+  - image
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - Two Tier Birthday Cake
+    - 250
+    - Birthday Cake and cupcakes
+    - 450
+    - false
+    - true
+    - "Two layers of cake with icing sandwiched in between, with icing covering the\r\n
+      \     top and sides, covered in smooth fondant. This cake can be personalised
+      with\r\n      fondant designs. Contact us to discuss your bespoke design and
+      a personal\r\n      quotation\r\n"
+    - birthday_1.jpg
+    - '2018-04-08 11:07:42.798531'
+    - '2018-04-13 07:00:44.376463'
+  - - 2
+    - Birthday Cake and cupcakes
+    - 159.99
+    - Birthday and Occasion
+    - 520
+    - false
+    - true
+    - "Two layers of cake with icing sandwiched in between, with icing covering the\r\n
+      \     top and sides, covered in smooth fondant.\r\nsandwiched in between, with
+      icing covering the top and sides, covered in smooth fondant. This cake can be
+      personalised with fondant designs. Contact us to discuss your bespoke design
+      and a personal quotation."
+    - birthday_2.jpg
+    - '2018-04-08 11:10:06.334903'
+    - '2018-04-13 07:03:20.926565'
+  - - 3
+    - Pink Icing Birthday Cake
+    - 124.99
+    - Birthday and Occasion
+    - 456
+    - false
+    - true
+    - "Three layers of cake with icing sandwiched in between the layers, covered in\r\n
+      \     icing on the top and sides\r\n"
+    - birthday_3.jpg
+    - '2018-04-08 11:13:04.744644'
+    - '2018-04-13 08:38:11.217427'
+  - - 4
+    - Green Icing Birthday Cake
+    - 124.99
+    - Birthday and Occasion
+    - 520
+    - false
+    - false
+    - "Three layers of cake with icing sandwiched in between the layers, covered in\r\n
+      \     icing on the top and sides\r\n"
+    - birthday_4.jpg
+    - '2018-04-08 11:17:02.494573'
+    - '2018-04-13 08:01:48.060367'
+  - - 5
+    - Three Tier Birthday Cake
+    - 325.99
+    - Birthday and Occasion
+    - 510
+    - false
+    - false
+    - Chocolate biscuit cake topped with Icing
+    - birthday_5.jpg
+    - '2018-04-13 09:21:09.736592'
+    - '2018-04-13 09:21:09.736592'
+  - - 6
+    - Madeira sponge cake and doughnuts
+    - 110
+    - Birthday and Occasion
+    - 560
+    - false
+    - true
+    - "A moist Lemon Madeira layered with a Tangy Lemon Curd and Lemon Buttercream.\r\n
+      \     Addition are doughnuts with pink icing\r\n"
+    - occasion_2.jpg
+    - '2018-04-13 09:23:06.864911'
+    - '2018-04-13 09:24:51.262954'
+  - - 7
+    - White buttercream cake with fresh flowers
+    - 159.99
+    - Birthday and Occasion
+    - 510
+    - false
+    - true
+    - White buttercream cake with fresh flowers
+    - occasion_3.jpg
+    - '2018-04-13 09:28:06.697054'
+    - '2018-04-13 09:28:06.697054'
+  - - 8
+    - Wedding Cake with Fresh Flowers
+    - 699.99
+    - Wedding Cakes
+    - 436
+    - false
+    - true
+    - "'An artisan wedding cake is a wonderful way to add design, tradition, personal\r\n
+      \     style, glamour and fun to a wedding party. Your cake should be beautiful
+      and\r\n      taste amazing, made with the best ingredients. \r\n"
+    - wedding_1.jpg
+    - '2018-04-13 09:29:31.347471'
+    - '2018-04-13 09:32:34.390928'
+  - - 9
+    - Wedding Cake  with berries and flowers
+    - 750
+    - Wedding Cakes
+    - 485
+    - false
+    - false
+    - "'An artisan wedding cake is a wonderful way to add design, tradition, personal\r\n
+      \     style, glamour and fun to a wedding party. Your cake should be beautiful
+      and\r\n      taste amazing, made with the best ingredients. \r\n"
+    - wedding_2.jpg
+    - '2018-04-13 09:34:02.765752'
+    - '2018-04-13 09:34:02.765752'
+  - - 10
+    - 3 Tier White Icing wedding cake with red flowers
+    - 850
+    - Wedding Cakes
+    - 510
+    - false
+    - true
+    - "'An artisan wedding cake is a wonderful way to add design, tradition, personal\r\n
+      \     style, glamour and fun to a wedding party. Your cake should be beautiful
+      and\r\n      taste amazing, made with the best ingredients."
+    - wedding_3.jpg
+    - '2018-04-13 09:39:29.841552'
+    - '2018-04-13 09:40:30.569841'
+  - - 11
+    - White icing wedding cake with ribbon and flowers
+    - 750
+    - Wedding Cakes
+    - 458
+    - false
+    - false
+    - "'An artisan wedding cake is a wonderful way to add design, tradition, personal\r\n
+      \     style, glamour and fun to a wedding party. Your cake should be beautiful
+      and\r\n      taste amazing, made with the best ingredients. "
+    - wedding_4.jpg
+    - '2018-04-13 09:46:59.450262'
+    - '2018-04-13 09:46:59.450262'
+  - - 12
+    - 3 Tier Chocolate wedding cake
+    - 855.99
+    - Wedding Cakes
+    - 560
+    - false
+    - false
+    - "'An artisan wedding cake is a wonderful way to add design, tradition, personal\r\n
+      \     style, glamour and fun to a wedding party. Your cake should be beautiful
+      and\r\n      taste amazing, made with the best ingredients. "
+    - wedding_5.jpg
+    - '2018-04-13 09:48:39.331049'
+    - '2018-04-13 09:48:39.331049'
+  - - 13
+    - Pink 1st Birthday Cake
+    - 75
+    - Baby Cakes
+    - 450
+    - false
+    - false
+    - "Light moist sponge cake covered in soft sugarpaste icing and decorated with\r\n
+      \     sugarpaste diadema"
+    - baby_1.jpg
+    - '2018-04-13 09:50:30.997695'
+    - '2018-04-13 09:50:30.997695'
+  - - 14
+    - Two Tier White and Blue cake
+    - 160.99
+    - Baby Cakes
+    - 450
+    - false
+    - false
+    - "light moist sponge cake covered in soft sugarpaste icing and decorated with\r\n
+      \     teddy bear and personalised\r\n"
+    - baby_2.jpg
+    - '2018-04-13 09:52:28.640977'
+    - '2018-04-13 09:52:28.640977'
+  - - 15
+    - One tier cake with Stroller
+    - 129.99
+    - Baby Cakes
+    - 459
+    - false
+    - false
+    - Madeira sponge cake covered with Icing and decorated with stroller and ribbon
+    - baby_3.jpg
+    - '2018-04-13 09:53:58.748187'
+    - '2018-04-13 09:53:58.748187'
+  - - 16
+    - Cupcake Cake
+    - 75
+    - Baby Cakes
+    - 410
+    - false
+    - true
+    - "- Giant cupcake decorated with soft buttercream for girls 1st birthday"
+    - baby_4.jpg
+    - '2018-04-13 09:55:58.388869'
+    - '2018-04-13 09:55:58.388869'
+  - - 17
+    - Three Tier Pink Icing cake
+    - 450
+    - ''
+    - 469
+    - false
+    - true
+    - "'Madeira sponge cake decorated with Icing "
+    - baby_5.jpg
+    - '2018-04-13 09:57:54.613270'
+    - '2018-04-13 09:57:54.613270'
+  - - 18
+    - "- Madeira sponge cake covered with White Icing with cross"
+    - 399
+    - Communion Cakes
+    - 509
+    - false
+    - false
+    - "Two tier Madeira sponge cake for the special ocasion. Filled with cream and\r\n
+      \     strawberry jam covered with white icing. Decorated with edible cross topper"
+    - communion_1.jpg
+    - '2018-04-13 09:59:56.597210'
+    - '2018-04-13 09:59:56.597210'
+  - - 19
+    - White Two tier communion cake
+    - 359.99
+    - Communion Cakes
+    - 520
+    - true
+    - false
+    - "Two tier Madeira sponge cake for the special ocasion. Filled with cream and\r\n
+      \     strawberry jam covered with delicious buttercream icing. Decorated with
+      edible cross topper."
+    - communion_2.jpg
+    - '2018-04-13 10:01:44.064577'
+    - '2018-04-13 10:01:44.064577'
+  - - 20
+    - Chocolate biscuit Communion cake
+    - 255
+    - Communion Cakes
+    - 545
+    - false
+    - true
+    - "Your child's first communion is a special day that the entire family will want\r\n
+      \     to celebrate, and what better way than to have a delicious communion cake?
+      \\r\\n\r\n      Delicious Chocolate Biscuit cake covered with buttercream icing.
+      you can also\r\n      add personalised text is a perfect choice.\r\n"
+    - communion_3.jpg
+    - '2018-04-13 10:03:08.892461'
+    - '2018-04-13 10:03:08.892461'
+  - - 21
+    - One Tier communion cake
+    - 255
+    - Communion Cakes
+    - 450
+    - false
+    - true
+    - "Your child's first communion is a special day that the entire family will want\r\n
+      \     to celebrate, and what better way than to have a delicious communion cake?
+      This\r\n      delicious Red velvet cake is a perfect choice."
+    - communion_4.jpg
+    - '2018-04-13 10:04:52.421868'
+    - '2018-04-13 10:04:52.421868'
+  - - 22
+    - Peppa Pig Character Cake
+    - 120
+    - ''
+    - 350
+    - false
+    - true
+    - "We sell Character Themed Cake Pans in various sizes & shapes to make any party\r\n
+      \     spectacular & fun! Madeira sponge cake filled with cream and strawberry
+      jam."
+    - character_1.jpg
+    - '2018-04-13 10:07:37.434804'
+    - '2018-04-13 10:07:37.434804'
+  - - 23
+    - Minion Cake
+    - 89.99
+    - ''
+    - 450
+    - false
+    - true
+    - "We sell Character Themed Cake Pans in various sizes & shapes to make any party\r\n
+      \     spectacular & fun! Madeira sponge cake filled with cream and strawberry
+      jam."
+    - character_2.jpg
+    - '2018-04-13 10:09:28.969478'
+    - '2018-04-13 10:09:28.969478'
+  - - 24
+    - Avengers Cake
+    - 160
+    - ''
+    - 496
+    - false
+    - false
+    - "We sell Character Themed Cake Pans in various sizes & shapes to make any party\r\n
+      \     spectacular & fun! Madeira sponge cake filled with cream and strawberry
+      jam."
+    - character_3.jpg
+    - '2018-04-13 10:10:31.054647'
+    - '2018-04-13 10:10:46.311983'
+  - - 25
+    - Batman Character Cake
+    - 169.99
+    - ''
+    - 459
+    - false
+    - true
+    - We sell Character Themed Cake Pans in various sizes & shapes to make any party   spectacular
+      & fun!
+    - character_4.jpg
+    - '2018-04-13 10:12:07.736115'
+    - '2018-04-13 10:12:07.736115'
+  - - 26
+    - M&M cake
+    - 250
+    - ''
+    - 520
+    - false
+    - true
+    - We sell Character Themed Cake Pans in various sizes & shapes to make any party
+      spectacular & fun!
+    - character_5.jpg
+    - '2018-04-13 10:14:35.178470'
+    - '2018-04-13 10:14:35.178470'
+  - - 27
+    - Gluten Free Vanilla Cake
+    - 150
+    - ''
+    - 350
+    - true
+    - false
+    - Artisan & delicious gluten free cakes baked daily and delivered to your door.
+    - gluten_1.jpg
+    - '2018-04-13 10:16:22.603486'
+    - '2018-04-13 10:16:22.603486'
+  - - 28
+    - Gluten Free Carrot Cake
+    - 60
+    - Gluten free Cakes
+    - 450
+    - true
+    - false
+    - Artisan & delicious gluten free cakes baked daily and delivered to your door.
+    - gluten_2.jpg
+    - '2018-04-13 10:19:45.823031'
+    - '2018-04-13 10:19:45.823031'
+  - - 29
+    - Fruit and flower decorated Doughnuts
+    - 3
+    - Small Cakes
+    - 452
+    - false
+    - false
+    - "Order our delicious Doughnuts as a boxed dozen, a doughnut hamper or a doughnut
+      party pack.\r\n"
+    - small_1.jpg
+    - '2018-04-13 10:22:10.131059'
+    - '2018-04-13 10:22:10.131059'
+  - - 30
+    - Vanilla Cupcake with Buttercream Frosting
+    - 3.51
+    - ''
+    - 300
+    - false
+    - false
+    - Vanilla Cupcake with Buttercream Frosting
+    - small_2.jpg
+    - '2018-04-13 10:23:26.543963'
+    - '2018-04-13 10:23:26.543963'
+  - - 31
+    - Cinnamon Buns
+    - 2
+    - Small Cakes
+    - 436
+    - false
+    - true
+    - Tasty Cinnamon Buns
+    - small_3.jpg
+    - '2018-04-13 10:24:51.913730'
+    - '2018-04-13 10:24:51.913730'
+  - - 32
+    - Macaroons
+    - 2.5
+    - Small Cakes
+    - 404
+    - false
+    - false
+    - "These macaroons literally melt in your mouth and come in a variety of 6 different\r\n
+      \     flavours, such as vanilla, coffee, chocolate, raspberry, Pistachio and
+      lemon.\r\n"
+    - small_4.jpg
+    - '2018-04-13 10:25:54.641071'
+    - '2018-04-13 10:25:54.641071'

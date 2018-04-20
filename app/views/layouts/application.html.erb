@@ -3,27 +3,16 @@
   <head>
     <title><%=yield(:title) %> | Bakery</title>
     <%= csrf_meta_tags %>
-    
-  
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-
   <body>
-  
-  <br>
-  
- <%= render 'layouts/header'%> 
-  
-   <div class="container"> 
-    <%= yield %> 
-    </div> 
-  <br>
-   
- 
-  <%= render 'layouts/footer'%> 
-   
+    <%= render 'layouts/header'%> 
+    <div class="row">
+      <div id="banner"></div>
+      <%= yield %> 
+      <%= render 'layouts/footer'%> 
+    </div>
   </body>
 </html>
 
