@@ -437,3 +437,37 @@ li a:hover {
 .social__img:hover {
     opacity: 0.4;
 }
+
+.info_2 { 
+    background-color: #e0c459;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: purple;
+    font-family: "Brush Script MT", cursive;
+     font-weight: bold;
+   }
+   
+   
+   .title { 
+    background-color: #e0c459;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+}
+
+.thankYou { 
+    /* The image used */
+ 
+   background-image: url("thanks_2.jpg");
+    /* Full height */
+    width: 100%;
+    height: auto;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}  
