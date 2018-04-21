@@ -1,12 +1,16 @@
 <p id="notice"><%= notice %></p>
 
 
-<h1>See full range of our delicious Cakes!</h1>
 
 
 <% if @items.length ==0 %>
-Where are they
+<H1 class="py-5 text-center">Your search did not match any results.</h1>
+<br>
+<H2 class="py-5 text-center">Would you like to try different type of cakes instead?</h2>
 <% end %>
+
+
+
 
 <div class="row">
     <% @items.each do |item| %>
@@ -31,8 +35,8 @@ Where are they
      <p><%= item.description %></p>
     
     <p>
-     <a href="/cart/<%= item.id %>" class="button">add to Cart</a>
-    <%= link_to 'Show', item, :class=>"btn btn-primary" %>
+     <a href="/cart/<%= item.id %>" class="btn btn-primary">add to Cart</a>
+    
     
        
     <% if session[:login] == 1 %>
@@ -40,6 +44,7 @@ Where are they
 
     <%= link_to 'Edit', edit_item_path(item) %>
     <%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to 'Show', item, :class=>"btn btn-primary" %>
     <% end %>  
     </p>
  </div>
@@ -48,6 +53,4 @@ Where are they
 
 <br>
 
-<%= link_to 'New Item', new_item_path, :class=>"button", :role=>"button" %>
-
-
+<%= link_to 'New Item', new_item_path, :class=>"btn btn-primary", :role=>"button" %>

@@ -199,6 +199,7 @@ li a:hover {
 #banner {
     background:url('/assets/cover.jpg');
     background-size: 100%;
+    background-repeat: no-repeat;
     height: 500px;
     width: 100%;
     margin:0;
@@ -230,6 +231,82 @@ li a:hover {
     color: #222277; /*edit*/
     font-size: 22px;
 }
+
+
+/* about pages */
+#banner_about {
+    background:url('/assets/cupcake_banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+}
+
+.heading-area {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #eee;
+}
+.content {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.body-txt {
+    padding-top: 80px;
+}
+.content h1 { 
+    color: #222277; /*edit*/
+    font-size: 28px;
+}
+.content h2 { 
+    color: #222277; /*edit*/
+    font-size: 24px;
+}
+.content h3 { 
+    color: #222277; /*edit*/
+    font-size: 22px;
+}
+
+/* contact pages */
+#banner_contact {
+    background:url('/assets/cake_banner.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin:0;
+    padding:0;
+    
+}
+
+.heading-area {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: #eee;
+}
+.content {
+    max-width: 840px;
+    margin: 0 auto;
+}
+.body-txt {
+    padding-top: 80px;
+}
+.content h1 { 
+    color: #222277; /*edit*/
+    font-size: 28px;
+}
+.content h2 { 
+    color: #222277; /*edit*/
+    font-size: 24px;
+}
+.content h3 { 
+    color: #222277; /*edit*/
+    font-size: 22px;
+}
+
 
 
 /* home categories + items page */
