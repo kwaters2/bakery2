@@ -58,8 +58,6 @@ Rails.application.routes.draw do
   get 'category/:title', to: 'static_pages#category'
   
   
-  get '/contact', to: 'messages#new'
-  post '/contact', to: 'messages#create'
 
 end
 

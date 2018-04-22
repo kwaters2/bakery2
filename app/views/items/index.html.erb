@@ -26,16 +26,16 @@
                 <h3><%= item.name %></h3>
              
                 <h4>Price: € <%= item.price %></h4>
-                <p>Calories per Serving: <%= item.caloriesPerServing %>
-                <br>Gluten Free: 
+                <p><b>Calories per Serving:</b> <%= item.caloriesPerServing %>
+                <br><b>Gluten Free: </b>
                 <%  if item.glutenFree? %>Yes
                 <% else %>No 
                 <% end %>
-                <br>Item contains Nuts: 
+                <br><b>Item contains Nuts: </b>
                 <% if item.containsNuts? %>Yes
                 <% else %>No 
                 <% end %>
-                
+                <br>
              <br><%= item.description %></p>
              
             
