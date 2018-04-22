@@ -83,7 +83,7 @@ li a:hover {
 .headTop {
     min-height: 10px;
     width: 100%;
-    background-color: #422D1E;
+    background-color: #4f193c;
     background-color: rgb(66,45,30);
 }
 
@@ -121,7 +121,10 @@ li a:hover {
     display: block; 
     max-width: 200px;
     padding-top: 10px;
+  
 }
+
+
 .search-label label { 
     margin-bottom: 0;
     
@@ -129,6 +132,7 @@ li a:hover {
 .search-input {
     min-width: 300px;
     padding-bottom: 5px;
+    color: black;
 }
 .call-label {
     max-width: 50px;
@@ -364,9 +368,7 @@ li a:hover {
 }
 
 .paymentthankyou > h1 {
-    
-    
-    
+
 }
 
 .cartContainer {
@@ -471,3 +473,38 @@ li a:hover {
     background-repeat: no-repeat;
    
 }  
+
+/* form */
+.new h1 {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-left: 180px;
+}
+
+.content form input, .content form textarea, .content select  {
+    margin-bottom: 5px;
+    width: 50%;
+}
+.content textarea {
+    min-height: 100px;
+}
+.content select {
+    min-height: 30px;
+}
+
+.content form input.btn {
+    margin-left: 200px;
+    width: 30%;
+    margin: 20px 0 80px 200px;
+}
+
+.content .field label {
+    min-width: 160px;
+    text-align: right;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.content .gluten, .content .nuts {
+    width: auto;
+}
+

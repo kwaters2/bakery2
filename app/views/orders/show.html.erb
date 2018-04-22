@@ -15,8 +15,8 @@
 </tr>        
 
 <tr>
-  <td><%= link_to 'Edit Order', edit_order_path(@order), :class =>"button" %></td> 
-   <td><%= link_to 'Back to Orders', orders_path, :class =>"button" %> 
+  <td><%= link_to 'Edit Order', edit_order_path(@order), :class =>"btn btn-primary" %></td> 
+   <td><%= link_to 'Back to Orders', orders_path, :class =>"btn btn-primary" %> 
     
     
   </td>
@@ -29,17 +29,4 @@
 </table>    
 
 
-<h2>Order Details</h2>
-
-<table id="customers">
-  <%= @orderitems.each do |orderitem| %>
-  <tr>
-    <td><%= orderitem.title %></td>
-    <td>QTY ordered: <%= orderitem.quantity %></td>
-   
- 
-  </tr>
-  
-     <% end %>
-</table>
 </div>
