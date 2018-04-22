@@ -408,3 +408,11 @@ li a:hover {
 .cartcont2 {
      padding:10px;   
 }
+
+
+#backgroundimg {
+    background-image:url('/assets/cover.jpg');
+    opacity:0.2;
+    width:100%;
+    height:auto;
+}
