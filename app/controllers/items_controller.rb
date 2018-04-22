@@ -19,6 +19,7 @@ class ItemsController < ApplicationController
 
   # GET /items/1
   # GET /items/1.json
+  
   def show
   end
 
@@ -33,12 +34,12 @@ class ItemsController < ApplicationController
      @categories = Category.all.map{|c| [ c.title, c.id ] }
   end
 
-# POST /items
+  # POST /items
   # POST /items.json
   def create
     @item = Item.new(item_params)
+     @item = Item.new(item_params)
     @item.category_id = params[:category_id]
-    @categories = Category.all.map{|c| [ c.title, c.id ] }
 
     respond_to do |format|
       if @item.save
@@ -50,7 +51,6 @@ class ItemsController < ApplicationController
       end
     end
   end
-
 
   # PATCH/PUT /items/1
   # PATCH/PUT /items/1.json

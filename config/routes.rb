@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-
-
-
-
   get 'orderitems/index'
 
   get 'orderitems/show'
@@ -42,7 +38,6 @@ Rails.application.routes.draw do
   resources :items
   root 'static_pages#home'
 
-
   get '/about', to: 'static_pages#about' 
 
   get '/contact', to: 'static_pages#contact'
@@ -61,6 +56,10 @@ Rails.application.routes.draw do
   root :to => 'site#home'
   
   get 'category/:title', to: 'static_pages#category'
+  
+  
+  get '/contact', to: 'messages#new'
+  post '/contact', to: 'messages#create'
 
 end
 

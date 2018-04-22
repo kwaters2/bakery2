@@ -1,44 +1,83 @@
+<div class="row">
+   <div class="col-md-12 new">
+    <div class"container">
+       <div class="content">
+
+<h3><%= @item.name  %></h3>
+<tr>
+
+  <td><img class="img-responsive" src=<%=asset_path @item.image, {:style => "width:10%;"} %>/></td>
+</tr>
+
+</div>
+<% if notice %>
+<div class="alert alert-info">
 <p id="notice"><%= notice %></p>
+</div>
+<% end %>
 
-<p>
-  <strong>Name:</strong>
-  <%= @item.name %>
-</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+<table class="table table-bordered">
+<tr>
+  <td><b>Price:</b></td>
+  <td><%= @item.price %></td>
+</tr>
 
-<p>
-  <strong>Category:</strong>
-  <%= @item.category %>
-</p>
+<tr>
+  <td><b>Category:</b></td>
+  <td><%= @item.category %></td>
+</tr>
 
-<p>
-  <strong>Caloriesperserving:</strong>
-  <%= @item.caloriesPerServing %>
-</p>
+<tr>
+  <td><b>Calories per Serving:</b></td>
+  <td><%= @item.caloriesPerServing %></td>
+</tr>
 
-<p>
-  <strong>Glutenfree:</strong>
-  <%= @item.glutenFree %>
-</p>
+<tr>
+  <td><b>Gluten Free:</b></td>
+  <td><%= @item.glutenFree %></td>
+</tr>
 
-<p>
-  <strong>Containsnuts:</strong>
-  <%= @item.containsNuts %>
-</p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+                
+                
 
-<p>
-  <strong>Image:</strong>
-  <%= @item.image %>
-</p>
+<tr>
+  <td><b>Gluten Free:</b></td>
+	<td>	<% case @item.glutenFree
+		when "Yes" %>
+		<p>yes</p>
+		<% when "No" %>
+		<p>no</p>
+		<% end %>
+	</td>
 
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+</tr>
+	
+	
+	
+
+
+<tr>
+  <td><b>Contains Nuts:</b></td>
+  <td><%= @item.containsNuts %></td>
+</tr>
+
+
+<tr>
+  <td><b>Description:</b></td>
+  <td><%= @item.description %></td>
+</tr>
+
+
+
+
+
+</table>
+
+<%= link_to 'Back', items_path, :class=>"btn btn-primary" %>
+     </div>
+   </div>
+  </div>
+</div>
+
