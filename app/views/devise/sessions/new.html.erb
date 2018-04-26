@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+<div class="row page signup login">
+   <div class="col-md-12 new">
+    <div class"container">
+      <div class="content">
+        
+
+        <h2> <% if session_path(resource_name) != '/admins/sign_in' %> Customer <% else %> Admin <% end %>Log in</h2>
+        
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.label :email %><br />
+            <%= f.email_field :email, autofocus: true %>
+          </div>
+        
+          <div class="field">
+            <%= f.label :password %><br />
+            <%= f.password_field :password, autocomplete: "off" %>
+          </div>
+        
+          <% if devise_mapping.rememberable? -%>
+            <div class="field">
+              <%= f.label :remember_me %>
+              <%= f.check_box :remember_me, :class => 'checkbx' %>
+            </div>
+          <% end -%>
+        
+          <div class="actions">
+            <%= f.submit "Log in", :class => 'btn btn-primary'  %>
+          </div>
+        <% end %>
+        
+        <% if !user_signed_in? %>
+           <!-- need to hide admin registration from public but not users registration -->
+           <% if session_path(resource_name) != '/admins/sign_in' %>  <!-- don't show if user tries the admin login  -->
+              <%= render "devise/shared/links" %>
+           <% end %>
+        <% end %>
+        
+
+       </div>
+       
+       
+  </div>
+ </div>
+</div>

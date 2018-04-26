@@ -2,11 +2,11 @@
   <div class="heading-area">
     <div class="container">
       <div class="content">
-         <h1>About Our Bakery</h1>
-         <h3>It's not just a piece of cake. It's a masterpiece of cake.</h3>
+        <h3>It's not just a piece of cake. It's a masterpiece of cake.</h3>
       </div>
     </div>
   </div> 
+  <p id="notice"><%= notice %></p>
     <% if @items.length ==0 %>
         <div class="info">
             <div class="container">
@@ -14,19 +14,29 @@
             </div>
         </div>
     <% end %>
-  
-  <div class="container">
-     <div class="content body-txt">
-      <h1>Please look at our selection of cakes</h1>
-        <% @items.each do |item| %>
-            <div class="itemhols">
-                <h1><%= item.name %></h1>
-                <%= image_tag item.image, :class=>"itemholsIm" %>
-                <p>This item is in the category: <%= item.category %></p>
-            </div>
-        <% end %>
-    
-    </div>
-  </div>
-    
+  <div class="row">
+      <div class="itemsPage">
+        <div class"container">
+          <div class="content body-txt">
+             
+           <h1><%=  @categoryName %></h1>
+           <h2>Please look at our selection of cakes</h2>
+            
+            <% @items.each do |item| %>
+           
+                <div class="col-md-4 text-center cat">
+                   <span class="imgHols">
+                     <%= image_tag item.image, :class=>"img-responsive" %>
+                   </span>
+                   <h3><%= item.name %></h3>
+                    <h4>Price: € <%= item.price %></h4>
+                   <a href="/cart/<%= item.id %>" class="btn btn-primary">add to Cart</a>
+                </div>
+            <% end %>
+        
+        </div>
+       </div>
+      </div>
+      
+ </div>
 </div>

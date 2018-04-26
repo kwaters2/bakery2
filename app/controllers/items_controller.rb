@@ -38,8 +38,8 @@ class ItemsController < ApplicationController
   # POST /items.json
   def create
     @item = Item.new(item_params)
-     @item = Item.new(item_params)
     @item.category_id = params[:category_id]
+    @categories = Category.all.map{|c| [ c.title, c.id ] }
 
     respond_to do |format|
       if @item.save

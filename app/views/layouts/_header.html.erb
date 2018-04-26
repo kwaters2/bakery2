@@ -2,7 +2,13 @@
     <div class="headTop">
       <div class="container">
         <table><tr><td class="call-label">Call Us:</td><td class="phone"><a href="tel:1234567">1234567</a></td>
-        <td class="search"><%= render 'layouts/search' %></td></tr></table>  
+        <td class="search"><%= render 'layouts/search' %></td>
+        <td class="admin-link"><ul><% if admin_signed_in? %>
+         <li><%= link_to 'Log out', destroy_admin_session_path, :method => :delete %></li>
+         <% else %>
+         <li><%= link_to 'Log in', new_admin_session_path %></li>
+        <% end %></li></ul></td></tr>
+        </table>   
       </div>
     </div>
     <div class="headBot"> 
