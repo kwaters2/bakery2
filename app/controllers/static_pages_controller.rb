@@ -14,6 +14,8 @@ class StaticPagesController < ApplicationController
     catName = params[:title]
       
     @items = Item.where("category like ?", catName)
+    
+    @categoryName = catName # to make global for category page
    
   end
   

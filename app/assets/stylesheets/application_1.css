@@ -372,19 +372,6 @@ li a:hover {
 }
 
 
-/*orders*/
-
-.orders .content table {
-    width: 100%;
-    border: 1px solid  #ccc;
-    margin-bottom: 40px;
-}
-.orders .content th {
-    background-color: #eee;
-    color: black;
-    padding: 5px;
-}
-
 
 /* alerts and messages */
 
@@ -573,15 +560,8 @@ form ul {
 }
 
 
-.edit-link, .delete-link, .show-link {
-    color: #7d0ce8;
-    display: inline-block;
-    width: 31%;
-    margin-top: 20px;
-}
 
-
-/* to access admin sign up path is:  /admins/sign_up */
+/* to access admin sign up path /admins/sign_up */
 
 
 /* signup styled for views/devise/registrations/new.html.erb */
@@ -601,23 +581,6 @@ form ul {
    
 }
 
-
-#notice {
-    background-color: #afa;
-}
-
-.add-item {
-    padding-top:20px;
-    padding-bottom: 20px;
-    background-color: #7fa;
-    text-align: right;
-    margin-bottom: 40px;
-    
-}
-
-.add-item .btn { 
-    margin-right: 40px;
-}
 
 
 form ul {
